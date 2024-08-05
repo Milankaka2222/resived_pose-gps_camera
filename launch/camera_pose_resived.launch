@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+     <arg name="pose_path" default="$(find cam_pose_converter)/pose/convert.txt"/>
+
+     <node  name="cam_pose_converter" pkg="cam_pose_converter" type="cam_pose_converter" output="screen">
+        <param name="pose_path" value="$(arg pose_path)" />
+      </node>
+</launch>
+
